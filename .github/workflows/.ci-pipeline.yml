@@ -1,5 +1,4 @@
 # CI de Nivel 01 - disparo após a conclusão de um pipeline
-
 name: 'Execução por Deploy'
 
 on:
