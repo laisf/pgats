@@ -2,22 +2,13 @@
 name: 'Execução por Deploy'
 
 on:
-  workflow_run:
-    workflows: ['Execução Manual']
-    types:
-      - completed
+  workflow_dispatch:
 
 jobs:
   e2e-tests:
     runs-on: ubuntu-latest
 
-    #condicional if
-    # `${expressao}`
-
-    if: ${{ github.event.workflow_run.conclusion == 'success' }}
-
     steps:
-      #clone do projeto
       - uses: actions/checkout@v4
 
       - uses: actions/setup-node@v4
