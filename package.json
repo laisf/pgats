@@ -5,12 +5,14 @@
   "main": "ex01-prog.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "e2e": "echo \"Running e2e tests!\""
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@playwright/test": "^1.45.3",
     "mocha": "^11.5.0"
   }
 }
